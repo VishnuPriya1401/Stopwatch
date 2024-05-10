@@ -18,24 +18,20 @@ h2{
 }
 .time{
   position: relative;
-  display: flex;
-  flex-direction: column;
   color: white;
+  width: 5rem;
+  height: 5rem;
+  font-size: 34px;
+  border: 2px solid white;
+  border-radius: 55px;
+  align-content: center;
 }
 .indicator{
   position: absolute;
-  top: 2rem;
-  left: -1rem;
+  top: -50%;
+  left: 36%;
   text-align: center;
-  font-size: 1rem;
-  align-content: center;
-}
-.timer{
-  width: 5rem;
-  height: 5rem;
-  font-size: 2rem;
-  border: 2px solid white;
-  border-radius: 55px;
+  font-size: 18px;
   align-content: center;
 }
 .buttons{
@@ -50,6 +46,7 @@ h2{
   color: white;
   background-color: rgb(243, 29, 72);
   margin-right: 15px;
+  margin-bootom: 15px;
   cursor: pointer;
 }
 .pause-btn{
