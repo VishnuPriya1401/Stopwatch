@@ -18,20 +18,24 @@ h2{
 }
 .time{
   position: relative;
-  width: 5rem;
-  height: 5rem;
-  font-size: 34px;
+  display: flex;
+  flex-direction: column;
   color: white;
-  border: 2px solid white;
-  border-radius: 55px;
-  align-content: center;
 }
 .indicator{
   position: absolute;
-  top: -50%;
-  left: 40%;
+  top: 2rem;
+  left: -1rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 1rem;
+  align-content: center;
+}
+.timer{
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  border: 2px solid white;
+  border-radius: 55px;
   align-content: center;
 }
 .buttons{
