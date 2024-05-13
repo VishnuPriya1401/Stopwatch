@@ -4,6 +4,7 @@ let int=null;
 let lapCount = 1;
 let isPause=false;
 let isStart=false;
+let isReset=false;
 
 let hr= document.querySelector('.hr-time');
 let min= document.querySelector('.min-time');
@@ -11,6 +12,7 @@ let sec= document.querySelector('.sec-time');
 let millisec= document.querySelector('.ms-time');
 
 document.querySelector('.start-btn').addEventListener('click',()=>{
+  isReset=false;
   if((int !== null)&&(isStart)){
     clearInterval(int);
   }
@@ -27,7 +29,7 @@ document.querySelector('.pause-btn').addEventListener('click',()=>{
 });
 
 document.querySelector('.lap-btn').addEventListener('click',()=>{
-  if((!isPause)&&(int!==null)){
+  if((!isPause)&&(int!==null)&&(!isReset)){
     clearInterval(int);
     lapSet(lapCount++);
   }
