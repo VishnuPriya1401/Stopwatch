@@ -36,6 +36,7 @@ document.querySelector('.lap-btn').addEventListener('click',()=>{
 })
 
 document.querySelector('.reset-btn').addEventListener('click',()=>{
+  isReset=true;
   isPause=false;
   isStart=false;
   clearInterval(int);
